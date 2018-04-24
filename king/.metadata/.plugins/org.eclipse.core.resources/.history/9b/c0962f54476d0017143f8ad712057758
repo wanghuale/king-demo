@@ -1,0 +1,60 @@
+package com.king.service.impl;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.google.common.collect.Lists;
+import com.king.mapper.RoleMapper;
+import com.king.mapper.UserMapper;
+import com.king.pojo.User;
+import com.king.service.IUserService;
+
+@Service("userService")
+public class UserServiceImpl implements IUserService {
+	
+	@Autowired
+    private UserMapper userMapper;
+	@Autowired
+	private RoleMapper roleMapper;
+	
+	@Override
+	public void updateLoginInfo(User user, String ip) {
+		
+	}
+
+	@Override
+	public User findByLoginName(String loginName) {
+		User user =new User();
+		user.setLoginName(loginName);
+		List<User> list = userMapper.selectUser(user);
+		return list!=null&& list.size()>0?list.get(0):null;
+	}
+
+	@Override
+	public Set<String> findRoles(String loginName) {
+		User user = findByLoginName(loginName);
+		Set<String> roles = new HashSet<String>();
+		if(user !=null ){
+			List<Long> rls = user.getRoleIds();
+			for (Long r : rls) {
+				
+			}
+			List<Long> strs = user.getRoleIds().toArray(new Long[0]);
+		}
+		return roles;
+	}
+
+	@Override
+	public Set<String> findPermissions(String loginName) {
+		return null;
+	}
+	
+	
+	
+	
+	
+}

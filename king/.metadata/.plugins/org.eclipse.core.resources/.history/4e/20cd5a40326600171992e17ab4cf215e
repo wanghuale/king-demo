@@ -1,0 +1,14 @@
+package com.king.dao;
+
+import java.util.Set;
+
+import com.king.vo.User;
+
+public interface UserDao {
+
+	public Set<String> findRoles(String username);
+	
+	public Set<String> findPermissions(String username);
+	
+	public User findByLoginName(String loginName);
+}

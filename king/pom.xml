@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.king</groupId>
+  <artifactId>king-parent</artifactId>
+  <version>2.0-SNAPSHOT</version>
+
+  
+  <packaging>pom</packaging>
+  
+   <modules>
+        <module>king-core</module>
+        <module>common-web</module>
+		<module>user-service-api</module>
+        <module>admin</module>
+        <module>user-service</module>
+        <module>king-mybatis-generator</module>
+    <module>activiti</module>
+    <module>king-activiti</module>
+  </modules>
+  
+  <url>http://maven.apache.org</url>
+
+ <!-- 集中定义依赖版本�?-->  
+  <properties>
+        <java.version>1.7</java.version>
+        <king.version>2.0-SNAPSHOT</king.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <joda-time.version>2.5</joda-time.version>
+		<junit.version>4.12</junit.version>
+		<slf4j.version>1.6.4</slf4j.version>
+		<druid.version>1.0.9</druid.version>
+		<freemarker.version>2.3.20</freemarker.version>
+		<servlet-api.version>2.5</servlet-api.version>
+		<shiro.version>1.2.4</shiro.version>  
+		<jedis.version>2.7.3</jedis.version>
+		<spring.version>4.1.6.RELEASE</spring.version>
+ 		<commons-logging.version>1.1.3</commons-logging.version>
+		<commons-lang.version>2.6</commons-lang.version>
+		<aspectjweaver.version>1.7.3</aspectjweaver.version>
+ 		<aopalliance.version>1.0</aopalliance.version>
+        <mybatis.version>3.4.2</mybatis.version>
+        <mybatis.generator.core>1.3.5</mybatis.generator.core>
+    	<commons-beanutils.version>1.9.2</commons-beanutils.version>
+    	 <commons-pool2.version>2.3</commons-pool2.version>
+		<mybatis-plus.version>2.0.9</mybatis-plus.version> 
+		<mysql.version>5.1.32</mysql.version>
+		 <mybatis.version>3.2.8</mybatis.version>
+		 <mybatis.spring.version>1.2.2</mybatis.spring.version>
+		 <guavaVersion>18.0</guavaVersion>
+		 <spring-security.version>3.2.6.RELEASE</spring-security.version>
+    </properties>
+  
+  
+  <dependencyManagement>
+        <dependencies>
+		  <!-- 依赖的项�?-->
+			<dependency>
+		   		<groupId>com.king</groupId>
+		  		<artifactId>common-web</artifactId>
+		  		<version>${king.version}</version>
+		 	 </dependency>
+		 	<dependency>
+		   		<groupId>com.king</groupId>
+		  		<artifactId>king-core</artifactId>
+		  		<version>${king.version}</version>
+		 	 </dependency>
+			 <dependency>
+		   		<groupId>com.king</groupId>
+		  		<artifactId>king-activiti</artifactId>
+		  		<version>${king.version}</version>
+		 	 </dependency>
+			 
+		 	<dependency>
+		   		<groupId>com.king</groupId>
+		  		<artifactId>user-service-api</artifactId>
+		  		<version>${king.version}</version>
+		 	 </dependency>
+            <dependency>
+                <groupId>com.king</groupId>
+                <artifactId>user-service</artifactId>
+                <version>${king.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+           <!-- spring -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+			<dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+			<dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-support</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+			<dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring-security.version}</version>
+            
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring-security.version}</version>
+            
+        </dependency>
+           <dependency>  
+	            <groupId>org.springframework</groupId>  
+	            <artifactId>spring-web</artifactId>  
+	            <version>${spring.version}</version>
+	        </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+	         <dependency>
+		          <groupId>org.springframework</groupId>
+		          <artifactId>spring-webmvc</artifactId>
+		          <version>${spring.version}</version>
+		      </dependency>
+		      <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+			<dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+			 <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+             <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+			
+			 <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${servlet-api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+			<!--  -->
+			<dependency>
+			  <groupId>com.google.guava</groupId>
+			  <artifactId>guava</artifactId>
+			  <version>${guavaVersion}</version>
+			</dependency>
+            <!-- common -->
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${commons-logging.version}</version>
+            </dependency>
+	  
+	  		<dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${commons-beanutils.version}</version>
+            </dependency>
+	  		<dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>${commons-pool2.version}</version>
+            </dependency>
+			
+			<dependency>
+			  <groupId>com.baomidou</groupId>
+			  <artifactId>mybatis-plus</artifactId>
+			  <version>${mybatis-plus.version}</version>
+			</dependency>
+            
+			<dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>${commons-lang.version}</version>
+            </dependency>
+			
+	  		<dependency>
+                <groupId>aopalliance</groupId>
+                <artifactId>aopalliance</artifactId>
+                <version>${aopalliance.version}</version>
+            </dependency>
+			
+			<dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectjweaver.version}</version>
+            </dependency>
+	  
+            <!-- 时间操作组件 -->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda-time.version}</version> 
+			</dependency>
+              <!-- Apache工具组件 -->
+           
+           <!-- Jackson Json处理工具�?-->
+          
+            <!-- httpclient -->
+           
+           <!-- 单元测试 -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+           <!-- 日志处理 -->
+
+            <!-- Mybatis -->
+            <dependency>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>${mybatis.generator.core}</version>
+            </dependency>
+			<dependency>
+				<groupId>org.mybatis</groupId>
+				<artifactId>mybatis</artifactId>
+				<version>${mybatis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mybatis</groupId>
+				<artifactId>mybatis-spring</artifactId>
+				<version>${mybatis.spring.version}</version>
+			</dependency>
+            <!-- MySql -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+             <!-- 连接�?-->            
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+           
+            <!-- JSP相关 -->
+            <dependency>
+                <groupId>org.freemarker</groupId>
+                <artifactId>freemarker</artifactId>
+                <version>${freemarker.version}</version>
+            </dependency>
+           
+           
+        
+
+            <!-- SECURITY begin -->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-core</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-web</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-ehcache</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+
+            
+            <!-- SECURITY end -->
+			<!-- Redis客户�?-->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+           
+           
+        </dependencies>
+    </dependencyManagement>
+
+
+    <!-- 插件配置 -->
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!-- compiler插件, 设定JDK版本 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.1</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                        <showWarnings>true</showWarnings>
+                         <!--解决 程序包com.sun.image.codec.jpeg不存�?-->
+                        <compilerArguments>
+                            <verbose/>
+                            <bootclasspath>${java.home}/lib/rt.jar;${java.home}/lib/jce.jar</bootclasspath>
+                        </compilerArguments>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

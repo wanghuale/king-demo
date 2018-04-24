@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<!--导入属性配置 -->
+	<properties resource="datasource.properties"></properties>
+	<!--指定特定数据库的jdbc驱动jar包的位置 -->
+	
+
+   <context id="default" >
+ 		 <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>   
+         <plugin type="com.king.generator.MySQLPaginationPlugin"/>   
+         <!-- optional，旨在创建class时，对注释进行控制 -->
+         <commentGenerator>
+             <property name="suppressDate" value="true"/>
+             <property name="suppressAllComments" value="true"/>
+         </commentGenerator>
+        
+         <!--jdbc的数据库连接 -->
+         <jdbcConnection
+                 driverClass="${db.driverClassName}"
+                 connectionURL="${db.url}"
+                 userId="${db.username}"
+                 password="${db.password}">
+         </jdbcConnection>
+ 
+ 
+         <javaTypeResolver>
+             <property name="forceBigDecimals" value="false"/>
+         </javaTypeResolver>
+ 
+         <javaModelGenerator targetPackage="com.king.pojo" targetProject="${project}">
+             <property name="${project}" value="false"/>
+             <property name="constructorBased" value="true"/>
+             <property name="trimStrings" value="true"/>
+             <property name="immutable" value="false"/>
+         </javaModelGenerator>
+ 
+         <sqlMapGenerator targetPackage="com.king.mapper.xml" targetProject="${project}">
+             <property name="${project}" value="false"/>
+         </sqlMapGenerator>
+ 
+ 
+         <javaClientGenerator type="XMLMAPPER" targetPackage="com.king.mapper" targetProject="${project}">
+            <property name="${project}" value="false" />
+         </javaClientGenerator>
+ 
+         <table tableName="sys_role_resource" domainObjectName="RoleResource" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+         <table tableName="sys_user_role" domainObjectName="UserRole" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+         
+     </context>
+ </generatorConfiguration>
+ 
+ 
+ 
+ 

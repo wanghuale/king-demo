@@ -1,0 +1,141 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>admin</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>admin Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <parent>
+		<artifactId>king-parent</artifactId>
+		<groupId>com.king</groupId>
+		<version>2.0-SNAPSHOT</version>
+	</parent>
+  <dependencies>
+  	<dependency>
+	      <groupId>com.king</groupId>
+	      <artifactId>king-core</artifactId>
+	</dependency>
+	<dependency>
+	      <groupId>com.king</groupId>
+	      <artifactId>user-service-api</artifactId>
+	</dependency>
+    <!--  <dependency>
+          <groupId>com.king</groupId>
+          <artifactId>user-service</artifactId>
+      </dependency> -->
+      <!-- MySql -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+    </dependency> 
+      
+	<dependency>
+        <groupId>org.apache.shiro</groupId>
+        <artifactId>shiro-web</artifactId>
+    </dependency>
+    <dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>servlet-api</artifactId>
+		<scope>provided</scope>
+	</dependency>
+	
+	
+	<!-- logback start -->  
+      <dependency>
+          <groupId>commons-logging</groupId>
+          <artifactId>commons-logging</artifactId>
+      </dependency>
+      <dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+	<!-- logback end -->
+	<!-- spring config start -->
+	<dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+    </dependency>
+    <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-tx</artifactId>
+      </dependency>
+       <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-jdbc</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-aop</artifactId>
+      </dependency>
+      <dependency>
+		  <groupId>org.springframework</groupId>
+		  <artifactId>spring-context-support</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+      <!-- spring config end -->
+      <!-- mybatis start -->
+      <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+        </dependency>
+      <!-- mybatis end -->
+       <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+        </dependency>
+      <!-- shiro start -->  
+      <dependency>
+          <groupId>org.apache.shiro</groupId>
+          <artifactId>shiro-core</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.shiro</groupId>
+          <artifactId>shiro-spring</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.shiro</groupId>
+          <artifactId>shiro-web</artifactId>
+      </dependency>
+     <!-- shiro end --> 
+     <!-- druid start -->
+     <dependency>
+          <groupId>com.alibaba</groupId>
+          <artifactId>druid</artifactId>
+     </dependency> 
+     <!-- druid end  -->
+     <!-- redis start  -->
+      <dependency>
+          <groupId>redis.clients</groupId>
+          <artifactId>jedis</artifactId>
+      </dependency>
+     <!-- redis end  -->   
+     <dependency>
+         <groupId>org.freemarker</groupId>
+         <artifactId>freemarker</artifactId>
+     </dependency>  
+     <dependency>
+	  <groupId>com.alibaba</groupId>
+	  <artifactId>fastjson</artifactId>
+	  <version>1.2.9</version>
+	</dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+   	<finalName>admin</finalName>
+   </build>
+  
+</project>

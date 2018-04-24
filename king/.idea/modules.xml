@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/admin/admin.iml" filepath="$PROJECT_DIR$/admin/admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-web/common-web.iml" filepath="$PROJECT_DIR$/common-web/common-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/king-activiti/king-activiti.iml" filepath="$PROJECT_DIR$/king-activiti/king-activiti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/king-core/king-core.iml" filepath="$PROJECT_DIR$/king-core/king-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/king-mybatis-generator/king-mybatis-generator.iml" filepath="$PROJECT_DIR$/king-mybatis-generator/king-mybatis-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/king-parent.iml" filepath="$PROJECT_DIR$/king-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service-api/user-service-api.iml" filepath="$PROJECT_DIR$/user-service-api/user-service-api.iml" />
+    </modules>
+  </component>
+</project>

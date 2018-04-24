@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Medical/src/main/resources/generatorConfig.xml&apos; to &apos;generatorConfig1.xml&apos;" description="Rename resource &apos;generatorConfig.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/generatorConfig.xml" name="generatorConfig1.xml" stamp="1499916589871" updateReferences="true"/>
+</session>

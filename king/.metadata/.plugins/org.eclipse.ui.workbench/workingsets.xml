@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1502875529060_2" label="shiro" name="shiro">
+<item elementID="=version" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=admin" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/user-service" type="4"/>
+<item elementID="=king-mybatis-generator" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=king-core" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=user-service-api" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1505886510798_3" label="activiti-root" name="activiti-root"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1505895204454_4" label="activti" name="activti">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-process-validation" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-registry" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-bpmn-converter" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-bpmn-layout" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-test" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-spring" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-image-generator" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-rest-api" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-identity-keycloak" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-core" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-audit-jpa" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-query-rest" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-json-converter" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-identity-basic" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-rest" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-engine" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-gateway" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-bpmn-model" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-query-model" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-query-repo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-audit" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-root" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-events" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-core-model" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-api" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/activiti-services-query" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1505895250613_5" label="king-activti" name="king-activti">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/kft-activiti-demo" type="4"/>
+<item elementID="=king-activiti" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1498707331369_0" label="Window Working Set" name="Aggregate for window 1498707331368"/>
+</workingSetManager>

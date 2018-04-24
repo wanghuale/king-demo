@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+				http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">
+		<!-- Database configurations -->
+	    <property name="databaseSchemaUpdate" value="true" />  
+	    <!-- job executor configurations -->
+	    <property name="jobExecutorActivate" value="true" />
+	    <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/activiti?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8" />  
+        <property name="jdbcDriver" value="com.mysql.jdbc.Driver" />  
+        <property name="jdbcUsername" value="root" />  
+        <property name="jdbcPassword" value="root" />  
+        <!-- 部署drl文件时需要设置一个自定义的部署解析类 -->
+        <property name="customPostDeployers">
+            <list>
+                <bean class="org.activiti.engine.impl.rules.RulesDeployer" />
+            </list>
+        </property> 
+	</bean>
+</beans>

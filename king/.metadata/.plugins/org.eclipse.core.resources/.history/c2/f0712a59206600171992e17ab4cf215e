@@ -1,0 +1,33 @@
+package com.king.service;
+
+import java.util.Set;
+
+import com.king.vo.User;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public void updateLoginInfo(User user, String ip) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Set<String> findRoles(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Set<String> findPermissions(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User findByLoginName(String loginName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

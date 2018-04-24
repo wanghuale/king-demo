@@ -1,0 +1,7 @@
+package com.king.service.impl;
+
+import com.king.service.IUserService;
+
+public class UserServiceImpl implements IUserService {
+
+}

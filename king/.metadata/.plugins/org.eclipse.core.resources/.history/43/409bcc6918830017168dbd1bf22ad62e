@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="org.goshop.*.controller"/>
+    <mvc:annotation-driven/>
+
+    <bean id="exceptionResolver" class="org.goshop.common.context.ExceptionHandler" />
+    <bean id="message" class="org.goshop.common.context.RedisMessage" />
+
+    <context:property-placeholder  ignore-resource-not-found="true"
+                                    location="classpath:resource/*.properties,
+                                  file:/root/web_home/manager/resource/*.properties" />
+    <bean id="freemarkerConfiguration"
+          class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="location" value="classpath:resource/freemarker.properties" />
+
+    </bean>
+
+    <!-- freemaker  Directive-->
+
+    <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver"
+          p:prefix="${TPL}" p:suffix=".ftl">
+
+        <property name="cache" value="false" />
+        <property name="viewClass"
+                  value="org.springframework.web.servlet.view.freemarker.FreeMarkerView" />
+        <property name="contentType" value="text/html;charset=UTF-8"></property>
+        <property name="exposeRequestAttributes" value="true" />
+        <property name="allowSessionOverride" value="true"/>
+        <property name="exposeSessionAttributes" value="true" />
+        <property name="exposeSpringMacroHelpers" value="true" />
+        <property name="requestContextAttribute" value="request" />
+        <property name="order" value="0"></property>
+    </bean>
+
+    <bean id="fmXmlEscape" class="freemarker.template.utility.XmlEscape" />
+    <!--    <bean id="freemarkerConfig"
+              class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">-->
+
+    <bean id="freemarkerConfig"
+          class="org.goshop.shiro.tag.ShiroTagFreeMarkerConfigurer">
+        <property name="templateLoaderPath" value="/WEB-INF/ftl/" />
+        <property name="defaultEncoding" value="UTF-8" />
+        <property name="freemarkerVariables">
+            <map>
+                
+            </map>
+        </property>
+        <property name="freemarkerSettings" ref="freemarkerConfiguration">
+
+        </property>
+    </bean>
+
+    
+
+</beans>

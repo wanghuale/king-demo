@@ -1,0 +1,8 @@
+package com.king.dao;
+
+import java.util.Set;
+
+public interface UserDao {
+
+	public Set<String> findRoles(String username);
+}

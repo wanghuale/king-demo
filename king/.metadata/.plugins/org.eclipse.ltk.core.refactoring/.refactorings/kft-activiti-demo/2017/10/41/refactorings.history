@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;king-activiti/src/main/java/com.king.util&apos;&#x0D;&#x0A;- Original project: &apos;kft-activiti-demo&apos;&#x0D;&#x0A;- Destination element: &apos;king-activiti/src/main/java/com.king.util&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     me.kafeitu.demo.activiti.util.PageUtil.java&#x0D;&#x0A;     me.kafeitu.demo.activiti.util.Page.java" description="Copy compilation units" destination="=king-activiti/src\/main\/java&lt;com.king.util" element1="/src\/main\/java&lt;me.kafeitu.demo.activiti.util{PageUtil.java" element2="/src\/main\/java&lt;me.kafeitu.demo.activiti.util{Page.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1507624223413" units="2" version="1.0"/>
+</session>

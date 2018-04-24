@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="admin" />
+        <module name="common-web" />
+        <module name="king-activiti" />
+        <module name="king-core" />
+        <module name="king-mybatis-generator" />
+        <module name="user-service" />
+        <module name="user-service-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin" target="1.7" />
+      <module name="common-web" target="1.7" />
+      <module name="king-activiti" target="1.7" />
+      <module name="king-core" target="1.7" />
+      <module name="king-mybatis-generator" target="1.7" />
+      <module name="king-parent" target="1.5" />
+      <module name="user-service" target="1.7" />
+      <module name="user-service-api" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
